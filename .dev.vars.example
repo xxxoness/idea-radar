@@ -1,0 +1,20 @@
+# Local development variables for Cloudflare Workers.
+# Copy this file to .dev.vars and fill real values locally.
+# Never commit .dev.vars.
+
+ADMIN_TOKEN=
+
+# Optional Threads API token.
+# Leave empty for mock/demo mode.
+THREADS_ACCESS_TOKEN=
+
+# Optional Telegram integration.
+TELEGRAM_BOT_TOKEN=
+TELEGRAM_CHAT_ID=
+
+# Runtime mode.
+# auto = use mock mode when THREADS_ACCESS_TOKEN is missing
+MOCK_MODE=auto
+
+# Dashboard URL used in Telegram alerts and links.
+DASHBOARD_URL=http://127.0.0.1:8789
