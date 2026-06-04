@@ -1,0 +1,29 @@
+name = "idea-radar"
+main = "src/worker/index.ts"
+compatibility_date = "2026-06-01"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./dist/client"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "idea-radar-db"
+database_id = "b68ae121-0037-450a-b9ba-2923ed35db70"
+
+[ai]
+binding = "AI"
+
+[vars]
+MOCK_MODE = "auto"
+THREADS_API_BASE = "https://graph.threads.net"
+THREADS_API_VERSION = "v1.0"
+MAX_KEYWORDS_PER_SCAN = "12"
+MAX_POSTS_PER_SEARCH = "20"
+MAX_AI_CANDIDATES = "24"
+ALERT_SCORE_THRESHOLD = "8.5"
+DASHBOARD_URL = "https://idea-radar.tg-ai-notes.workers.dev"
+
+[triggers]
+crons = ["0 8 * * *", "0 */6 * * *"]
